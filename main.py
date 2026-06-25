@@ -20,7 +20,8 @@ app = FastAPI()
 ALLOWED_ORIGINS = [
     "http://localhost:5173",          
     "http://127.0.0.1:5173",         
-    "https://textvlm.netlify.app"     
+    "https://textvlm.netlify.app"
+    "https://vlm-text-extraction-backend.onrender.com"     
 ]
 
 app.add_middleware(
