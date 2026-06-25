@@ -178,6 +178,11 @@ def extract_structured_data_via_groq(base64_image: str) -> list:
         print(f"Groq Cloud processing drop error: {str(e)}")
         raise HTTPException(status_code=502, detail=f"Groq runtime issue: {str(e)}")
 
+@app.get("/")
+async def root_health_check():
+    return {"status": "online", "application": "PDF VLM Engine"}
+
+
 @app.post("/process-attendance")
 async def process_attendance(files: List[UploadFile] = File(...)):
     if not groq_client:
