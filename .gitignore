@@ -1,0 +1,29 @@
+# Credentials and Local Configurations
+.env
+.env.*
+*.env
+
+# Local Generated Downloads
+static_downloads/
+*.csv
+*.xlsx
+
+# Python Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+pyvenv.cfg
+
+# Python Runtime Caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# System / IDE Logs
+.vscode/
+.idea/
+.DS_Store
+*.log
