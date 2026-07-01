@@ -48,7 +48,6 @@ else:
     print("CRITICAL WARNING: GROQ_API_KEY is missing from your environment config.")
 
 def preprocess_image(pix_bytes) -> str:
-    """Performs normalization and returns a clean, base64-encoded string for Groq."""
     nparr = np.frombuffer(pix_bytes, np.uint8)
     img = cv.imdecode(nparr, cv.IMREAD_GRAYSCALE)
     
